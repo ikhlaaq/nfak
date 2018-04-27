@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Audio Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="audio-image">
+            <img class="cover" />
+        </div>
+        <div id="audio-player">
+            <div id="audio-info">
+                <span class="artist"></span> -
+                <span class="title"></span>
+            </div>
+            <input id="volume" type="range" min="0" max="10" value="5" />
+            <br>
+            <div id="buttons">
+                <span>
+                    <button id="prev"></button>
+                    <button id="play"></button>
+                    <button id="pause"></button>
+                    <button id="stop"></button>
+                    <button id="next"></button>
+                </span>
+            </div>
+            <div class="clearfix"></div>
+            <div id="tracker">
+                <div id="progressBar">
+                    <span id="progress"></span>
+                </div>
+                <span id="duration"></span>
+            </div>
+            <div class="clearfix"></div>
+            <ul id="playlist" class="hidden">
+                <li song="My Life ft Peter Gabriel.mp3" cover="cover1.jpg" artist="NFAK">My Life ft Peter Gabriel</li>
+                <li song="The Taboo.mp3" cover="cover1.jpg" artist="NFAK">The Taboo</li>
+                <li song="Dam Mast Qalandar.mp3" cover="cover1.jpg" artist="NFAK">Dam Mast Qalandar</li>
+                <li song="Dillagi Bhool Jaani Padegi.mp3" cover="cover1.jpg" artist="NFAK">Dillagi Bhool Jaani Padegi</li>
+                <li song="Mere-Rashke-e-Qamar.mp3" cover="cover1.jpg" artist="NFAK">Mere-Rashke-e-Qamar</li>
+                <li song="Ankhiyan Udik diyan.mp3" cover="cover1.jpg" artist="NFAK">Ankhiyan Udik diyan</li>
+                <li song="Halka Halka Saroor.mp3" cover="cover1.jpg" artist="NFAK">Halka Halka Saroor</li>
+                <li song="Sanu Ik Pal Chain.mp3" cover="cover1.jpg" artist="NFAK">Sanu Ik Pal Chain</li>
+                <li song="Yaar Na Vichhre.mp3" cover="cover1.jpg" artist="NFAK">Yaar Na Vichhre</li>
+                <li song="Tum Agar Yuhi Nazren.mp3" cover="cover1.jpg" artist="NFAK">Tum Agar Yuhi Nazren</li>
+                <li song="Gham Hai ya Khushi.mp3" cover="cover1.jpg" artist="NFAK">Gham Hai ya Khushi</li>
+                <li song="Dil Diyan Gallan.mp3" cover="cover1.jpg" artist="Atif">Dil Diyan Gallan</li>
+
+            </ul>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <p>&copy; Miksid 16-03-2018</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
